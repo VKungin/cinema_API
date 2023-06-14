@@ -14,10 +14,10 @@ cd cinema_API
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-set DB_HOST=<your db hostname>
-set DB_NAME=<your db name>
-set DB_USER=<your db username>
-set DB_PASSWORD=<your db password>
+set POSTGRES_HOST=<your db hostname>
+set POSTGRES_DB=<your db name>
+set POSTGRES_USER=<your db username>
+set POSTGRES_PASSWORD=<your db password>
 python manage.py migrate
 python manage.py runserver
 ```
@@ -25,6 +25,8 @@ python manage.py runserver
 
 ## Run with docker
 ***
+https://hub.docker.com/r/megah1t/cinema-api
+
 Docker should be installed
 
 ```python
