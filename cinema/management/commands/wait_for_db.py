@@ -12,10 +12,10 @@ class Command(BaseCommand):
         retry_delay = 5
 
         db_params = {
-            "host": os.getenv("DB_HOST"),
-            "user": os.getenv("DB_USER"),
-            "password": os.getenv("DB_PASSWORD"),
-            "database": os.getenv("DB_NAME"),
+            "host": os.getenv("POSTGRES_HOST"),
+            "user": os.getenv("POSTGRES_USER"),
+            "password": os.getenv("POSTGRES_PASSWORD"),
+            "database": os.getenv("POSTGRES_DB"),
         }
 
         for _ in range(max_retries):
