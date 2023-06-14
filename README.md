@@ -8,16 +8,21 @@ API service for cinema management written on DRF
 ***
 Install PostgresSQL and create db
 
+create .env by example:
+```python
+POSTGRES_HOST=<your db hostname>
+POSTGRES_PORT=<your db port>
+POSTGRES_DB=<your db name>
+POSTGRES_USER=<your db username>
+POSTGRES_PASSWORD=<your db password>
+```
+
 ```python
 git clone https://github.com/megah1t/cinema_API.git
 cd cinema_API
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-set POSTGRES_HOST=<your db hostname>
-set POSTGRES_DB=<your db name>
-set POSTGRES_USER=<your db username>
-set POSTGRES_PASSWORD=<your db password>
 python manage.py migrate
 python manage.py runserver
 ```
